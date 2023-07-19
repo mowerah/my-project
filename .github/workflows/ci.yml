@@ -40,7 +40,7 @@ jobs:
     - name: Build and Push Docker Image 
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: mwerah/demo-app:v1.0
+        image: mwerah/demo-app
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
